@@ -1,0 +1,13 @@
+var global = 100;
+
+{
+  var local = 5;
+  print local;
+  {
+    var nested = 10;
+    print local + nested;
+  }
+  print global + local;
+}
+
+print global;
